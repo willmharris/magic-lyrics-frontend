@@ -1,9 +1,27 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-function Search() {
-    return(
-        <div>Search</div>
-    )
+class Search extends Component {
+    
+    refresh() {
+        setInterval(
+            function apiCall() { 
+                console.log("test"); 
+            }, 
+            1000
+        )
+    }
+    
+    render() {
+        return(
+            <div>
+                <div>Search</div>
+            </div>
+        )
+    }
+
+    componentDidMount() {
+        this.refresh()
+    }
 }
 
 export default Search
