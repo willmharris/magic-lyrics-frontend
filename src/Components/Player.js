@@ -27,20 +27,25 @@ class Player extends Component {
         })
     }
 
-    getSong = () => {
-        fetch("https://api.spotify.com/v1/me/player", {
-            headers: {"Authorization": "Bearer " + this.props.accessToken}
-        }).then(
-            resp => resp.json()
-        ).then(
-            data => {this.setState({songData: data})}
+    
+
+    refresh() {
+        setInterval( () => {
+                fetch("https://api.spotify.com/v1/me/player", {
+                    headers: {"Authorization": "Bearer " + this.props.accessToken}
+                }).then(
+                    resp => resp.json()
+                ).then(
+                    data => {this.setState({songData: data})}
+                )
+            }, 
+            1000
         )
     }
     
     render() {
         return(
             <div>
-                <button onClick={this.getSong}>Get song</button>
                 {this.state.songData ?
                     <div>
                         <img src={this.state.songData.item.album.images[0].url} />
@@ -60,6 +65,7 @@ class Player extends Component {
 
     componentDidMount() {
         window.location.hash = ''
+        this.refresh()
     }
 
 }
