@@ -13,9 +13,19 @@ const loginLink = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirect
 
 
 function Login() {
+    
+    function hello() {
+        console.log('test')
+        fetch('http://localhost:3001/lyrics').then(
+            resp => resp.json()
+        ).then(
+            data => console.log(data)
+        )
+    }
+    
     return(
         <div>
-            <div>Login page</div>
+            <div onClick={hello}>Get info</div>
             <br/>
             <a href={loginLink}>Login to Spotify</a>
         </div>
