@@ -5,7 +5,9 @@ class Player extends Component {
     constructor() {
         super()
         this.state = {
-            songData: null
+            songData: null,
+            lyrics: null,
+            songURL: null
         }
     }
 
@@ -27,8 +29,6 @@ class Player extends Component {
         })
     }
 
-    
-
     refresh() {
         setInterval( () => {
                 fetch("https://api.spotify.com/v1/me/player", {
@@ -37,6 +37,12 @@ class Player extends Component {
                     resp => resp.json()
                 ).then(
                     data => {this.setState({songData: data})}
+                ).then(() => fetch(`http://localhost:3001/lyrics?song=${this.state.songData.item.name}&artist=${this.state.songData.item.artists[0].name}`)).then(
+                    resp => resp.json()
+                ).then(
+                    data => {
+                        this.setState({lyrics: data["lyrics"], songUrl: data["website"]})
+                    }
                 )
             }, 
             1000
@@ -55,6 +61,7 @@ class Player extends Component {
                         <button onClick={this.playPause}  id="play">Play</button>
                         <button onClick={this.playPause}  id="pause">Pause</button>
                         <button onClick={this.previousNext} id="next">Next</button>
+                        <div className="preformatted">{this.state.lyrics}</div>
                     </div>
                 :
                     null
