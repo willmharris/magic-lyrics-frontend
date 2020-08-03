@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const authEndpoint = 'https://accounts.spotify.com/authorize'
 const clientId = "8836102077dc476b87b683e9fbcd411a"
 const redirectUri = "http://localhost:3000/player"
@@ -13,20 +14,9 @@ const loginLink = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirect
 
 
 function Login() {
-    
-    function hello() {
-        console.log('test')
-        fetch('http://localhost:3001/lyrics').then(
-            resp => resp.json()
-        ).then(
-            data => console.log(data)
-        )
-    }
-    
+
     return(
         <div>
-            <div onClick={hello}>Get info</div>
-            <br/>
             <a href={loginLink}>Login to Spotify</a>
         </div>
     )
