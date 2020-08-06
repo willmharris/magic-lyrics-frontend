@@ -12,16 +12,19 @@ const scopes = [
 ]
 const loginLink = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`
 
-
+const bg = "https://sheffieldsolidsurfaces.b-cdn.net/wp-content/uploads/sites/3/2019/02/b0da5f_1dec43baa7e544a986e5b77576b4b4dfmv2.jpg"
 
 function Login() {
 
     return(
-        <Grid>
-            <Grid.Column style={{padding: 100}}>
-                <Grid.Row>Welcome to Magic Lyrics</Grid.Row>
-                <Grid.Row style={{paddingTop: 0}}>Spotify lyrics made easy</Grid.Row>
-                <Grid.Row><Button href={loginLink}>Login to Spotify</Button></Grid.Row>
+        <Grid style={{backgroundImage: `url(${bg})`}}>
+            <Grid.Column style={{paddingTop: 100}}>
+                <Grid.Row style ={{paddingLeft: 375, paddingTop: 100, fontSize: 60}}>Welcome to Magic Lyrics</Grid.Row>
+                <Grid.Row style={{paddingLeft: 475, paddingTop: 100, fontSize: 40}}>Spotify lyrics made easy</Grid.Row>
+                <Grid.Row style={{paddingLeft: 515, paddingTop: 100}}>
+                    <Button href={loginLink} style={{fontSize: 35}}>Login to Spotify</Button>
+                </Grid.Row>
+                <Grid.Row style={{ paddingTop: 325}}></Grid.Row>
             </Grid.Column>
         </Grid>
     )
