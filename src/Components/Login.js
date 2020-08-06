@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button, Grid } from 'semantic-ui-react'
 
 
 const authEndpoint = 'https://accounts.spotify.com/authorize'
@@ -16,9 +17,13 @@ const loginLink = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirect
 function Login() {
 
     return(
-        <div>
-            <a href={loginLink}>Login to Spotify</a>
-        </div>
+        <Grid>
+            <Grid.Column style={{padding: 100}}>
+                <Grid.Row>Welcome to Magic Lyrics</Grid.Row>
+                <Grid.Row style={{paddingTop: 0}}>Spotify lyrics made easy</Grid.Row>
+                <Grid.Row><Button href={loginLink}>Login to Spotify</Button></Grid.Row>
+            </Grid.Column>
+        </Grid>
     )
 }
 
