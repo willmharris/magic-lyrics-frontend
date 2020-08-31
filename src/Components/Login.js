@@ -22,7 +22,7 @@ function Login() {
                 <Grid.Row style ={{paddingLeft: 375, paddingTop: 100, fontSize: 60}}>Welcome to Magic Lyrics</Grid.Row>
                 <Grid.Row style={{paddingLeft: 475, paddingTop: 100, fontSize: 40}}>Spotify lyrics made easy</Grid.Row>
                 <Grid.Row style={{paddingLeft: 515, paddingTop: 100}}>
-                    <Button href={loginLink} style={{fontSize: 35}}>Login to Spotify</Button>
+                    <Button href={loginLink} style={{fontSize: 35}}>Login to Spotify [][]</Button>
                 </Grid.Row>
                 <Grid.Row style={{ paddingTop: 325}}></Grid.Row>
             </Grid.Column>
