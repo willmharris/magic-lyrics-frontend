@@ -4,7 +4,7 @@ import { Button, Grid } from 'semantic-ui-react'
 
 const authEndpoint = 'https://accounts.spotify.com/authorize'
 const clientId = "8836102077dc476b87b683e9fbcd411a"
-const redirectUri = "http://localhost:3000/player"
+const redirectUri = "https://willmharris.github.io/magic-lyrics-frontend/player"
 const scopes = [
   "user-read-currently-playing",
   "user-read-playback-state",
