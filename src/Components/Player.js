@@ -40,7 +40,7 @@ class Player extends Component {
                     resp => resp.json()
                 ).then(
                     data => {this.setState({songData: data})}
-                ).then(() => fetch(`http://localhost:3001/lyrics?song=${this.state.songData.item.name}&artist=${this.state.songData.item.artists[0].name}`)).then(
+                ).then(() => fetch(`https://magic-lyrics-backend.herokuapp.com/lyrics?song=${this.state.songData.item.name}&artist=${this.state.songData.item.artists[0].name}`)).then(
                     resp => resp.json()
                 ).then(
                     data => {
