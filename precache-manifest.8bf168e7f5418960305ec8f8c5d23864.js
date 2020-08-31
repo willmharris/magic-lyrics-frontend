@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55b193d9a3b949e7823f467e03bb2d03",
+    "revision": "a4d6c7f58f2dcdae08a31a2d74d56cc4",
     "url": "/magic-lyrics-frontend/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/magic-lyrics-frontend/static/css/2.17cb7ba4.chunk.css"
   },
   {
-    "revision": "af15d549a1c6bcbd01de",
+    "revision": "7d2d2c33d3954a5d13bc",
     "url": "/magic-lyrics-frontend/static/css/main.6f45c35b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/magic-lyrics-frontend/static/js/2.f9b13606.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af15d549a1c6bcbd01de",
-    "url": "/magic-lyrics-frontend/static/js/main.4c240847.chunk.js"
+    "revision": "7d2d2c33d3954a5d13bc",
+    "url": "/magic-lyrics-frontend/static/js/main.9b6d75b8.chunk.js"
   },
   {
     "revision": "bddae1c2231c263cae45",
