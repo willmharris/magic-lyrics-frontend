@@ -17,6 +17,7 @@ class Routing extends Component {
         return(
             <Router>
                 <Route exact path="/" render={() => <Login/>} />
+                <Route exact path="/magic-lyrics-frontend" render={() => <Login/>} />
                 <Route exact path="/player" render={() => <Player accessToken={this.state.accessToken}/>} />
                 <Route exact path="/search" render={() => <Search/>} />
             </Router>
