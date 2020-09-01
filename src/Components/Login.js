@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 const authEndpoint = 'https://accounts.spotify.com/authorize'
 const clientId = "8836102077dc476b87b683e9fbcd411a"
-const redirectUri = "https://willmharris.github.io/magic-lyrics-frontend/player"
+const redirectUri = "https://willmharris.github.io/magic-lyrics-frontend/"
 const scopes = [
   "user-read-currently-playing",
   "user-read-playback-state",
