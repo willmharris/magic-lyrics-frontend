@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "897608471e66704722d35fe8b667d79d",
+    "revision": "165616ea0f78b69a9f2f6e693eb6d78a",
     "url": "/magic-lyrics-frontend/index.html"
   },
   {
-    "revision": "63d0d0a3bd3d813cb957",
+    "revision": "073556d4b25b6514999c",
     "url": "/magic-lyrics-frontend/static/css/2.17cb7ba4.chunk.css"
   },
   {
-    "revision": "68ebe7a9f1c29c8ea6b9",
+    "revision": "1e169d98d2a03edb9a6c",
     "url": "/magic-lyrics-frontend/static/css/main.6f45c35b.chunk.css"
   },
   {
-    "revision": "63d0d0a3bd3d813cb957",
-    "url": "/magic-lyrics-frontend/static/js/2.f9b13606.chunk.js"
+    "revision": "073556d4b25b6514999c",
+    "url": "/magic-lyrics-frontend/static/js/2.1c0ba525.chunk.js"
   },
   {
     "revision": "4d47ffde3dc69784e8e23fd910817ef8",
-    "url": "/magic-lyrics-frontend/static/js/2.f9b13606.chunk.js.LICENSE.txt"
+    "url": "/magic-lyrics-frontend/static/js/2.1c0ba525.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68ebe7a9f1c29c8ea6b9",
-    "url": "/magic-lyrics-frontend/static/js/main.79afd2d2.chunk.js"
+    "revision": "1e169d98d2a03edb9a6c",
+    "url": "/magic-lyrics-frontend/static/js/main.81b66af4.chunk.js"
   },
   {
     "revision": "bddae1c2231c263cae45",
