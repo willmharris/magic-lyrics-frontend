@@ -5,7 +5,7 @@ import {NavLink} from 'react-router-dom'
 
 const authEndpoint = 'https://accounts.spotify.com/authorize'
 const clientId = "8836102077dc476b87b683e9fbcd411a"
-const redirectUri = "https://google.com"
+const redirectUri = "https://willmharris.github.io/magic-lyrics-frontend/"
 const scopes = [
   "user-read-currently-playing",
   "user-read-playback-state",
@@ -24,7 +24,6 @@ function Login() {
                 <Grid.Row style={{paddingLeft: 475, paddingTop: 100, fontSize: 40}}>Spotify lyrics made easy</Grid.Row>
                 <Grid.Row style={{paddingLeft: 515, paddingTop: 100}}>
                     <Button href={loginLink} style={{fontSize: 35}}>Login to Spotify</Button>
-                    <NavLink to="/magic-lyrics-frontend/search">Search</NavLink>
                 </Grid.Row>
                 <Grid.Row style={{ paddingTop: 325}}></Grid.Row>
             </Grid.Column>

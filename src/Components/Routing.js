@@ -15,11 +15,17 @@ class Routing extends Component {
     
     render() {
         return(
-            <Router>
-                <Route exact path="/magic-lyrics-frontend/" render={() => <Login/>} />
-                <Route exact path="/magic-lyrics-frontend/player" render={() => <Player accessToken={this.state.accessToken}/>} />
-                <Route exact path="/magic-lyrics-frontend/search" render={() => <Search/>} />
-            </Router>
+            <div>
+                {
+                    this.state.accessToken.length > 0 
+                    ?
+                    <Player accessToken={this.state.accessToken}/>
+                    :
+                    <Login/>
+                }
+            </div>
+            
+          
         )
     }
 }
